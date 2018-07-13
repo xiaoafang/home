@@ -1,0 +1,15 @@
+#pragma once
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef char SearchTreeType;
+
+typedef struct SearchTreeNode
+{
+    SearchTreeType data;
+    struct SearchTreeType *lchild;
+    struct SearchTreeType *rchild;
+}SearchTreeNode;
+
+void SearchTreeinit(SearchTreeNode **root);
+void SearchTreeinsert(SearchTreeNode **root,SearchTreeType key);
